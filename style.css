@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    background-color: #071223;
+    height: 100vh;
+}
+
+h1 {
+    color: aliceblue;
+    width: 80%;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 3rem;
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.container img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.imgs {
+    transition: 0.4s ease-in-out;
+}
+
+.imgs:hover {
+    transform: scale(1.1);
+}
+
+.score {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.score div {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: aliceblue;
+}
+
+button {
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #fdc500;
+    color: #00296b;
+    box-shadow: 0.2rem 0.2rem 0.5rem #00000081;
+}
+
+.glow {
+    background-color: rgba(77, 0, 128, 0.7);
+    height: 500px;
+    width: 500px;
+    filter: blur(300px);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 6rem;
+}
+
+.loss {
+    background-color: red;
+}
+
+.win {
+    background-color: green;
+}
